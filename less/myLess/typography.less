@@ -1,0 +1,98 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: @bodyFont,@defaultFont1,@defaultFont2,@defaultFont3;
+    color: @bodyColor;
+    background-color: @bodyBackColor;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: @headerFont,@defaultFont1,@defaultFont2,@defaultFont3;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@media(min-width:767px) {
+    p {
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
+a {
+    color: white;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: rgb(255,255,255);
+}
+
+.light {
+    font-weight: 400;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+::selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+.Color1{
+    color: @colorSection1;
+}
+.Color2{
+    color: @colorSection2;
+}
+.Color3{
+    color: @colorSection3;
+}
+.darkColor1{
+    color: @darkColorSection1;
+}
+.darkColor2{
+    color: @darkColorSection2;
+}
+.darkColor3{
+    color: @darkColorSection3;
+}

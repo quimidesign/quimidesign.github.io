@@ -1,0 +1,198 @@
+
+#quimi2, .intro-text{
+    display: none;
+}
+
+.intro {
+    height: 100%;
+    padding: 0;
+    .intro-body {
+        display: table-cell;
+        vertical-align: middle;
+        .brand-heading {
+            font-size: 100px;
+        }
+        .intro-text {
+             font-size: 25px;
+        }
+    }
+}
+
+@-webkit-keyframes pulse {    
+    0 {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0 {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.brand-heading {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.2s;
+    -moz-animation-duration: 1.2s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+.intro {                                    
+    height: 100%;
+    display: table; 
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: @imageSection1;
+    background-attachment:fixed;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.imgYo {
+    background: @imageSection2;   
+}
+
+.imgWebDevelopment {
+    background: @imageSection3;
+}
+
+.qBackground{
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background-attachment:fixed;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+#Getintouch{
+   padding: 100px 0px 50px 0px;
+}
+
+@media(min-width:767px) {
+    .content-section {
+        padding-top: 110px;
+    }
+
+    .uparrow {
+        background: url('img/uparrow.png');
+        cursor: pointer;
+        width: 66px;
+        height: 67px;
+        position: fixed;
+        bottom: 30px;
+        right:30px;
+        display:none;
+        z-index: 1;
+        opacity: 0.5;
+    }
+}
+
+
+@media(max-width:767px) {
+ 
+    .uparrow {
+        background: url('img/uparrow.png') no-repeat center scroll;
+        cursor: pointer;
+        width: 26px;
+        height: 27px;
+        position: fixed;
+        bottom: 20px;
+        right:20px;
+        display:none;
+        z-index: 1;
+        opacity: 0.5;
+    }
+
+}
+
+
+footer p {
+    margin: 0;
+}
+
+
+
+#myFooter{
+    border-top: solid 1px white;
+    font-size: 12px;
+    padding: 10px 0px;
+}
+
+#comments{
+    background-color: @colorSection2;
+}
+#quotes{
+    margin-top: -47px;
+    padding-bottom: 59px;
+}
+
+.myrow{
+    margin-right: 0px;
+    margin-left:0px;
+}
+
+
+
+/*MEDIA QUERY FOR THE QUOTES SECTION*/
+@media(min-width:992px) {
+    .customtext{
+        text-align: left;
+        margin-left: -56px;
+    }
+}
+
+#linkquotes{
+    text-decoration: underline;
+    font-style: normal;
+}
+
+.banner1{
+    padding-bottom:5px;
+    background-color: @colorSection1;
+}
+.banner2{
+    padding-bottom:5px;
+    background-color: @colorSection2;
+}
+
+.content-section{
+    padding-top: 0px;
+}
